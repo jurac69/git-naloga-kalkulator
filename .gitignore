@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# lokalne nastavitve in skrivnosti
+.env
+
+# dnevniki
+*.log
+
+# sistemske datoteke
+.DS_Store
