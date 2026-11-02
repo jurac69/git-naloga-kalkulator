@@ -18,12 +18,16 @@ def deli(a, b):
     return a / b
 
 
-OPERACIJE = {"+": sestej, "-": odstej, "*": zmnozi, "/": deli}
+def potenca(a, b):
+    return a ** b
+
+
+OPERACIJE = {"+": sestej, "-": odstej, "*": zmnozi, "/": deli, "^": potenca}
 
 
 def main(argumenti):
     if len(argumenti) != 3:
-        print("Uporaba: python3 kalkulator.py <a> <+|-|*|/> <b>")
+        print("Uporaba: python3 kalkulator.py <a> <+|-|*|/|^> <b>")
         return 1
     a, operacija, b = argumenti
     print(OPERACIJE[operacija](float(a), float(b)))
