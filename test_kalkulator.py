@@ -16,6 +16,10 @@ class TestKalkulator(unittest.TestCase):
     def test_deli(self):
         self.assertEqual(deli(10, 2), 5)
 
+    def test_deli_z_nic(self):
+        with self.assertRaises(ValueError):
+            deli(1, 0)
+
 
 if __name__ == "__main__":
     unittest.main()
