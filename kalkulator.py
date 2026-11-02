@@ -1,4 +1,4 @@
-"""Preprost kalkulator za ukazno vrstico."""
+"""Kalkulator z osnovnimi matematičnimi operacijami."""
 import sys
 
 
