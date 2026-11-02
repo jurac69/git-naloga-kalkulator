@@ -15,6 +15,8 @@ def zmnozi(a, b):
 
 
 def deli(a, b):
+    if b == 0:
+        raise ValueError("Deljenje z nič ni dovoljeno.")
     return a / b
 
 
@@ -34,7 +36,11 @@ def main(argumenti):
         print("Uporaba: python3 kalkulator.py <a> <+|-|*|/|^|%> <b>")
         return 1
     a, operacija, b = argumenti
-    print(OPERACIJE[operacija](float(a), float(b)))
+    try:
+        print(OPERACIJE[operacija](float(a), float(b)))
+    except ValueError as napaka:
+        print(f"Napaka: {napaka}")
+        return 1
     return 0
 
 
