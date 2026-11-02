@@ -28,7 +28,11 @@ def ostanek(a, b):
     return a % b
 
 
-OPERACIJE = {"+": sestej, "-": odstej, "*": zmnozi, "/": deli, "^": potenca, "%": ostanek}
+def koren(a, b):
+    return a ** (1 / b)
+
+
+OPERACIJE = {"+": sestej, "-": odstej, "*": zmnozi, "/": deli, "^": potenca, "%": ostanek, "r": koren}
 
 
 def main(argumenti):
