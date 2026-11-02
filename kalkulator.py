@@ -1,4 +1,4 @@
-"""Študentski kalkulator za ukazno vrstico."""
+"""Študentski kalkulator z osnovnimi matematičnimi operacijami."""
 import sys
 
 
